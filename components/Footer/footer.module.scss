@@ -1,0 +1,145 @@
+.wrapper {
+  background: linear-gradient(
+      0deg,
+      rgba(160, 134, 108, 0.05),
+      rgba(160, 134, 108, 0.05)
+    ),
+    #faf9f8;
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border-bottom: 1px solid rgb(232, 226, 220);
+  margin-bottom: 50px;
+  font-size: 13px;
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0 40px;
+    img {
+      margin-right: 10px;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.mid {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+}
+.parent {
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 20px;
+}
+.child {
+  font-size: 13px;
+  line-height: 26px;
+}
+.bot {
+  padding: 50px 0;
+}
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 20px;
+}
+.references {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 300;
+  font-size: 13px;
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    img {
+      margin-left: 10px;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+.logo {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    padding: 0 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  .top {
+    order: 2;
+    flex-direction: column;
+    height: 100%;
+    border-bottom: none;
+    margin-bottom: 0;
+    a {
+      margin: 0;
+      width: 100%;
+      height: 50px;
+      border-bottom: 1px solid #d4c6b9;
+    }
+  }
+  .mid {
+    order: 1;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .links {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+  .bot {
+    order: 3;
+    padding: 35px 0;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 0 35px;
+    text-align: center;
+    img {
+      &:last-of-type {
+        width: 100%;
+        max-width: 150px;
+        margin-left: 25px;
+      }
+    }
+  }
+  .references {
+    flex-direction: column;
+    text-align: center;
+    a {
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px;
+    }
+  }
+}

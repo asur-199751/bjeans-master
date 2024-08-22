@@ -1,0 +1,112 @@
+.wrapper {
+  width: 100%;
+  height: calc(100vh - 235px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 250px;
+  background: #f8f1eb;
+  border-radius: 5px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  div {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    &:first-of-type {
+      font-weight: 500;
+      font-size: 20px;
+      span {
+        margin-left: auto;
+        width: 200px;
+        font-size: 10px;
+        color: #787878;
+        font-weight: normal;
+      }
+    }
+  }
+  a {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 5px;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+
+.logoJoki {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icons {
+  position: absolute;
+  &:first-of-type {
+    bottom: -60px;
+    left: -50px;
+  }
+}
+.lasthero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  height: 40px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #9b9b9b;
+  span {
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    width: 100%;
+    height: calc(100vh - 165px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+  }
+  .inner {
+    div {
+      &:first-of-type {
+        span {
+          margin: 0;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .top {
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .icons {
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    &:first-of-type {
+      bottom: -30px;
+      left: -40px;
+    }
+  }
+}

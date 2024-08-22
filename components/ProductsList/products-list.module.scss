@@ -1,0 +1,199 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -12px;
+}
+.card {
+  position: relative;
+  width: 33.3%;
+  margin-bottom: 25px;
+  padding: 0 12px;
+}
+.cardHover {
+  display: block;
+  position: relative;
+  &:hover .cardSizes {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
+  &:hover .cardColorsList {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
+  &:hover .cardColorsLenght {
+    display: none;
+  }
+}
+.cardImg {
+  display: block;
+  width: 100%;
+  height: 465px;
+  cursor: pointer;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2px;
+  }
+}
+.cardSizes {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 430px;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 14px;
+  background: #f4f4f4;
+}
+.cardSizeDisabled {
+  color: rgba(0, 0, 0, 0.2);
+  text-decoration: line-through;
+}
+.cardColors {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #787878;
+  font-size: 16px;
+  border-bottom: 1px solid #f4f4f4;
+}
+.cardColorsList {
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+.cardWishlist {
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  img {
+    margin-left: 5px;
+  }
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 70px;
+}
+.cardName {
+  font-weight: 500;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.cardPrice {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.salePrice {
+  color: #f20000;
+}
+.normalPrice {
+  text-decoration-line: line-through;
+  color: #787878;
+  font-weight: normal;
+  margin-left: 15px;
+}
+.discountPrice {
+  position: absolute;
+  top: 10px;
+  left: 22px;
+  width: 45px;
+  height: 25px;
+  font-size: 13px;
+  font-weight: normal;
+  background: #faf8f8;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .list {
+    margin: 0 -5px;
+  }
+  .card {
+    width: 50%;
+    padding: 0 5px;
+  }
+  .cardImg {
+    height: 240px;
+    img {
+      border-radius: 5px;
+    }
+  }
+  .cardSizes {
+    display: none;
+  }
+  .cardColors {
+    border-bottom: none;
+  }
+  .cardColorsLenght {
+    display: none;
+  }
+  .cardColorsList {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.6s ease-in-out;
+  }
+  .cardWishlist {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    justify-content: center;
+    span {
+      display: none;
+    }
+    img {
+      width: 9px;
+      height: 8px;
+      margin-left: 0;
+    }
+  }
+  .cardBody {
+    height: 40px;
+  }
+  .cardName {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .cardPrice {
+    font-size: 13px;
+  }
+  .salePrice {
+    margin-bottom: 5px;
+  }
+  .normalPrice {
+    margin: 0;
+  }
+  .discountPrice {
+    left: 20px;
+  }
+}

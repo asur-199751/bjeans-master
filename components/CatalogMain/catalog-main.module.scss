@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+}
+.right {
+  width: 75%;
+}
+.rightTop {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: 600;
+  font-size: 15px;
+  margin-bottom: 15px;
+  select {
+    border: none;
+    outline: none;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .right {
+    width: 100%;
+  }
+}

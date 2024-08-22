@@ -1,0 +1,28 @@
+.bannerStyle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 465px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  font-size: 14px;
+  color: #ffffff;
+  span {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 10px;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .bannerStyle {
+    height: 230px;
+    border-radius: 5px;
+    span {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 115px;
+  background: linear-gradient(
+      0deg,
+      rgba(160, 134, 108, 0.05),
+      rgba(160, 134, 108, 0.05)
+    ),
+    #faf9f8;
+  a {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    img {
+      margin-left: 10px;
+    }
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 1023px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: space-evenly;
+    a {
+      margin: 0;
+    }
+  }
+}

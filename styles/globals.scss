@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+html,
+body {
+  width: 100%;
+  min-width: 320px;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: 'Futura New';
+  color: #222222;
+  background: #faf9f8;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.jokiTitle {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.jokiInput,
+.jokiTextarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+  height: 40px;
+  border: 1px solid #949391;
+  border-radius: 2px;
+  margin: 0 auto 20px;
+  padding: 0 15px;
+  font-family: inherit;
+}
+.jokiTextarea {
+  padding: 15px;
+  height: 100px;
+  resize: none;
+}
+.jokiButton {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  width: 100%;
+  max-width: 500px;
+  height: 60px;
+  background: #222222;
+  border-radius: 2px;
+  color: white;
+  margin: 0 auto 20px;
+}
+.jokiDesc {
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.react-tel-input .form-control {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d4c6b9;
+  border-radius: 2px;
+  outline-color: black;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 0 12px;
+  background: transparent;
+}
+.special-label {
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  .slick-dots {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: 2px;
+    background: #f8f1eb;
+    bottom: 0;
+    padding: 0 25px;
+    li {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+    }
+    .slick-active {
+      background: #d4c6b9;
+      border-radius: 5px;
+    }
+  }
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewMedium-Obl.eot');
+  src: local('Futura New Medium Obl'), local('FuturaNewMedium-Obl'),
+    url('/fonts/FuturaNewMedium-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewMedium-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewMedium-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewMedium-Obl.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url('/fonts/FuturaNewDemi-Obl.eot');
+  src: local('Futura New Demi Obl'), local('FuturaNewDemi-Obl'),
+    url('/fonts/FuturaNewDemi-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewDemi-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewDemi-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewDemi-Obl.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewMedium-Reg.eot');
+  src: local('Futura New Medium Reg'), local('FuturaNewMedium-Reg'),
+    url('/fonts/FuturaNewMedium-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewMedium-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewMedium-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewMedium-Reg.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewHeavy-Reg.eot');
+  src: local('Futura New Heavy Reg'), local('FuturaNewHeavy-Reg'),
+    url('/fonts/FuturaNewHeavy-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewHeavy-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewHeavy-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewHeavy-Reg.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewLight-Obl.eot');
+  src: local('Futura New Light Obl'), local('FuturaNewLight-Obl'),
+    url('/fonts/FuturaNewLight-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewLight-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewLight-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewLight-Obl.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New Book';
+  src: url('/fonts/FuturaNewBook-Obl.eot');
+  src: local('Futura New Book Obl'), local('FuturaNewBook-Obl'),
+    url('/fonts/FuturaNewBook-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewBook-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewBook-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewBook-Obl.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewExtraBold-Obl.eot');
+  src: local('Futura New ExtraBold Obl'), local('FuturaNewExtraBold-Obl'),
+    url('/fonts/FuturaNewExtraBold-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewExtraBold-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewExtraBold-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewExtraBold-Obl.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New Book';
+  src: url('/fonts/FuturaNewBook-Reg.eot');
+  src: local('Futura New Book Reg'), local('FuturaNewBook-Reg'),
+    url('/fonts/FuturaNewBook-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewBook-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewBook-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewBook-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewBold-Obl.eot');
+  src: local('Futura New Bold Obl'), local('FuturaNewBold-Obl'),
+    url('/fonts/FuturaNewBold-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewBold-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewBold-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewBold-Obl.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewExtraBold-Reg.eot');
+  src: local('Futura New ExtraBold Reg'), local('FuturaNewExtraBold-Reg'),
+    url('/fonts/FuturaNewExtraBold-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewExtraBold-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewExtraBold-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewExtraBold-Reg.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewLight-Reg.eot');
+  src: local('Futura New Light Reg'), local('FuturaNewLight-Reg'),
+    url('/fonts/FuturaNewLight-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewLight-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewLight-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewLight-Reg.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New Demi';
+  src: url('/fonts/FuturaNewDemi-Reg.eot');
+  src: local('Futura New Demi Reg'), local('FuturaNewDemi-Reg'),
+    url('/fonts/FuturaNewDemi-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewDemi-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewDemi-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewDemi-Reg.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewBold-Reg.eot');
+  src: local('Futura New Bold Reg'), local('FuturaNewBold-Reg'),
+    url('/fonts/FuturaNewBold-Reg.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewBold-Reg.woff2') format('woff2'),
+    url('/fonts/FuturaNewBold-Reg.woff') format('woff'),
+    url('/fonts/FuturaNewBold-Reg.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Futura New';
+  src: url('/fonts/FuturaNewHeavy-Obl.eot');
+  src: local('Futura New Heavy Obl'), local('FuturaNewHeavy-Obl'),
+    url('/fonts/FuturaNewHeavy-Obl.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/FuturaNewHeavy-Obl.woff2') format('woff2'),
+    url('/fonts/FuturaNewHeavy-Obl.woff') format('woff'),
+    url('/fonts/FuturaNewHeavy-Obl.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+.zoodpay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 22px;
+  padding: 150px 15px;
+}

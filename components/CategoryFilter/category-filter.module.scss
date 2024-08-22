@@ -1,0 +1,24 @@
+.type {
+  display: flex;
+  flex-direction: column;
+  a,
+  div {
+    line-height: 28px;
+  }
+}
+.menuType {
+  display: flex;
+  flex-direction: column;
+  margin: -10px 0;
+  a,
+  div {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #d4c6b9;
+    cursor: pointer;
+  }
+}
+.jokiLink {
+  padding-left: 15px;
+}

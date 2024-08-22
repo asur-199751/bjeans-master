@@ -1,0 +1,24 @@
+.links {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  a {
+    font-size: 13px;
+    color: #787878;
+    margin-right: 2px;
+    &::after {
+      content: ' /';
+    }
+    &:last-child {
+      &::after {
+        content: '  ';
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .links {
+    display: none;
+  }
+}

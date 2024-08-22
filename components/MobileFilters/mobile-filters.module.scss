@@ -1,0 +1,79 @@
+.filterBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 13px;
+  margin: 25px 0;
+  img {
+    margin-right: 10px;
+  }
+}
+
+.wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  overflow: auto;
+  background: #f8f1eb;
+  padding: 25px;
+  &.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #d4c6b9;
+}
+
+.apply {
+  margin-top: auto;
+  button {
+    background: #ffffff;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-weight: 500;
+    font-size: 13px;
+  }
+}
+.reset {
+  margin-top: 20px;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: white;
+    border: 1px solid #7c7c7c;
+    outline: none !important;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #202020;
+    &:hover {
+      background: #202020;
+      color: white;
+    }
+  }
+}
